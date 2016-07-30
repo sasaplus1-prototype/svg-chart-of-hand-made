@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>SVG chart of hand made</title>
+    <style>
+      svg text {
+        fill: #1a2a62;
+      }
+      svg line {
+        stroke: #1a2a62;
+      }
+
+      svg .y-axis {
+        font-family: serif;
+      }
+
+      svg text.middle {
+        fill: #f68e00;
+      }
+      svg line.middle {
+        stroke: #f68e00;
+      }
+
+      svg text.large {
+        fill: #c82100;
+      }
+      svg line.large {
+        stroke: #c82100;
+      }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="0 0 640 480" preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <g>
+        <g>
+          <!-- y asis -->
+          <g><text class="y-axis" x="9%" y="96%" text-anchor="end" font-weight="bold">0</text></g>
+          <g><text class="y-axis" x="9%" y="80%" text-anchor="end" font-weight="bold">20万</text></g>
+          <g><text class="y-axis" x="9%" y="64%" text-anchor="end" font-weight="bold">40万</text></g>
+          <g><text class="y-axis" x="9%" y="48%" text-anchor="end" font-weight="bold">60万</text></g>
+          <g><text class="y-axis" x="9%" y="32%" text-anchor="end" font-weight="bold">80万</text></g>
+          <g><text class="y-axis" x="9%" y="16%" text-anchor="end" font-weight="bold">100万</text></g>
+          <g><text class="y-axis" x="9%" y="8%" text-anchor="end" font-weight="bold">（件）</text></g>
+          <line x1="10%" y1="0" x2="10%" y2="95%" stroke="black" stroke-width="1" />
+        </g>
+
+        <g>
+          <!-- x asis -->
+          <g><text class="x-axis js-x-axis js-x-axis-1" x="20%" y="99%" text-anchor="middle">7/14</text></g>
+          <g><text class="x-axis js-x-axis js-x-axis-2" x="36%" y="99%" text-anchor="middle">7/15</text></g>
+          <g><text class="x-axis js-x-axis js-x-axis-3" x="52%" y="99%" text-anchor="middle">7/16</text></g>
+          <g><text class="x-axis js-x-axis js-x-axis-4" x="68%" y="99%" text-anchor="middle">7/17</text></g>
+          <g><text class="x-axis js-x-axis js-x-axis-5" x="84%" y="99%" text-anchor="middle">7/18</text></g>
+          <line x1="10%" y1="95%" x2="95%" y2="95%" stroke="black" stroke-width="1" />
+        </g>
+
+        <g>
+          <image class="js-bar-image js-bar-image-1" xlink:href="" x="14%" y="0" width="82px" height="62px" />
+          <text class="js-bar-count js-bar-count-1" x="20%" y="13%" text-anchor="middle">0</text>
+          <line class="js-bar js-bar-1" x1="20%" y1="15%" x2="20%" y2="95%" stroke-width="15%" />
+        </g>
+        <g>
+          <image class="js-bar-image js-bar-image-2" xlink:href="" x="30%" y="0" width="82px" height="62px" />
+          <text class="js-bar-count js-bar-count-2" x="36%" y="13%" text-anchor="middle">0</text>
+          <line class="js-bar js-bar-2" x1="36%" y1="15%" x2="36%" y2="95%" stroke-width="15%" />
+        </g>
+        <g>
+          <image class="js-bar-image js-bar-image-3" xlink:href="" x="46%" y="0" width="82px" height="62px" />
+          <text class="js-bar-count js-bar-count-3" x="52%" y="13%" text-anchor="middle">0</text>
+          <line class="js-bar js-bar-3" x1="52%" y1="15%" x2="52%" y2="95%" stroke-width="15%" />
+        </g>
+        <g>
+          <image class="js-bar-image js-bar-image-4" xlink:href="" x="62%" y="0" width="82px" height="62px" />
+          <text class="js-bar-count js-bar-count-4" x="68%" y="13%" text-anchor="middle">0</text>
+          <line class="js-bar js-bar-4" x1="68%" y1="15%" x2="68%" y2="95%" stroke-width="15%" />
+        </g>
+        <g>
+          <image class="js-bar-image js-bar-image-5" xlink:href="" x="78%" y="0" width="82px" height="62px" />
+          <text class="js-bar-count js-bar-count-5" x="84%" y="13%" text-anchor="middle">0</text>
+          <line class="js-bar js-bar-5" x1="84%" y1="15%" x2="84%" y2="95%" stroke-width="15%" />
+        </g>
+      </g>
+    </svg>
+
+    <script id="json-chart-data" type="application/json">
+      {
+        "data": [
+          { "date": "4/12", "count": 206649 },
+          { "date": "5/12", "count": 389456 },
+          { "date": "6/12", "count": 665786 },
+          { "date": "7/12", "count": 543152 },
+          { "date": "8/12", "count": 790786 }
+        ]
+      }
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
